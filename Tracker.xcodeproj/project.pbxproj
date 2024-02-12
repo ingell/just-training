@@ -15,6 +15,7 @@
 		F33F49112B29BC8900307F1C /* TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33F49102B29BC8900307F1C /* TrackerTests.swift */; };
 		F33F491B2B29BC8900307F1C /* TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33F491A2B29BC8900307F1C /* TrackerUITests.swift */; };
 		F33F491D2B29BC8900307F1C /* TrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33F491C2B29BC8900307F1C /* TrackerUITestsLaunchTests.swift */; };
+		F36844902B7A6FC900F95737 /* workout view.swift in Sources */ = {isa = PBXBuildFile; fileRef = F368448F2B7A6FC900F95737 /* workout view.swift */; };
 		F3F836E72B73B075003D6BE7 /* workoutpage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F836E62B73B075003D6BE7 /* workoutpage.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		F33F49162B29BC8900307F1C /* TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F33F491A2B29BC8900307F1C /* TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerUITests.swift; sourceTree = "<group>"; };
 		F33F491C2B29BC8900307F1C /* TrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F368448F2B7A6FC900F95737 /* workout view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "workout view.swift"; sourceTree = "<group>"; };
 		F3F836E62B73B075003D6BE7 /* workoutpage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = workoutpage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,6 +110,7 @@
 				F33F49032B29BC8900307F1C /* Tracker.entitlements */,
 				F33F49072B29BC8900307F1C /* Info.plist */,
 				F33F49042B29BC8900307F1C /* Preview Content */,
+				F368448F2B7A6FC900F95737 /* workout view.swift */,
 			);
 			path = Tracker;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3F836E72B73B075003D6BE7 /* workoutpage.swift in Sources */,
+				F36844902B7A6FC900F95737 /* workout view.swift in Sources */,
 				F33F48FE2B29BC8800307F1C /* ContentView.swift in Sources */,
 				F33F49002B29BC8800307F1C /* Item.swift in Sources */,
 				F33F48FC2B29BC8800307F1C /* TrackerApp.swift in Sources */,
@@ -427,10 +431,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Tracker/Tracker.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Tracker/Preview Content\"";
-				DEVELOPMENT_TEAM = 2VG6Z53LH6;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -450,8 +454,9 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = elena.Tracker;
+				PRODUCT_BUNDLE_IDENTIFIER = Tracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -466,10 +471,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Tracker/Tracker.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Tracker/Preview Content\"";
-				DEVELOPMENT_TEAM = 2VG6Z53LH6;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -489,8 +494,9 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = elena.Tracker;
+				PRODUCT_BUNDLE_IDENTIFIER = Tracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;

@@ -1,48 +1,60 @@
-//
-//  ContentView.swift
-//  Tracker
-//
-//  Created by Elena on 13/12/2023.
-//
-
 import SwiftUI
 import SwiftData
+
 
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var items: [Item]
-
-    var body: some View {
-        NavigationSplitView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
-                    }
+  var body: some View {
+        VStack {
+             Text("Hello World")
+            Button(action: {
+             NavigationLink(destination: WorkoutView()) {
+                    Text("Do Something")
                 }
-                .onDelete(perform: deleteItems)
+            }) {
+                Text("Do Something")
+                    .font(.largeTitle)
+                    .fontWeight(.ultraLight)
             }
-#if os(macOS)
-            .navigationSplitViewColumnWidth(min: 180, ideal: 200)
-#endif
-            .toolbar {
-#if os(iOS)
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-#endif
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
-            }
-        } detail: {
-            Text("Select an item")
         }
     }
+   
+//     var body: some View {
+//         NavigationSplitView 
+//         {
+//             List {
+//                 ForEach(items) { item in
+//                     NavigationLink {
+//                         Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
+//                     } label: {
+//                         Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
+//                         Text("Hamlet")
+//                             .font(.title)
+//                     }
+//                 }
+//                 .onDelete(perform: deleteItems)
+//             }
+// #if os(macOS)
+//             .navigationSplitViewColumnWidth(min: 180, ideal: 200)
+// #endif
+//             .toolbar {
+// #if os(iOS)
+//                 ToolbarItem(placement: .navigationBarTrailing) {
+//                     EditButton()
+//                 }
+// #endif
+//                 ToolbarItem {
+//                     Button(action: addItem) {
+//                         Label("Add Item", systemImage: "plus")
+                       
+//                     }
+//                 }
+//             }
+//         } detail: {
+//             Text("Select an item")
+//         }
+//     }
 
     private func addItem() {
         withAnimation {
@@ -57,7 +69,9 @@ struct ContentView: View {
                 modelContext.delete(items[index])
             }
         }
+        
     }
+    
 }
 
 #Preview {

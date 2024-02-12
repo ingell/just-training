@@ -15,6 +15,7 @@
 		F33F49112B29BC8900307F1C /* TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33F49102B29BC8900307F1C /* TrackerTests.swift */; };
 		F33F491B2B29BC8900307F1C /* TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33F491A2B29BC8900307F1C /* TrackerUITests.swift */; };
 		F33F491D2B29BC8900307F1C /* TrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33F491C2B29BC8900307F1C /* TrackerUITestsLaunchTests.swift */; };
+		F3F836E72B73B075003D6BE7 /* workoutpage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F836E62B73B075003D6BE7 /* workoutpage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		F33F49162B29BC8900307F1C /* TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F33F491A2B29BC8900307F1C /* TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerUITests.swift; sourceTree = "<group>"; };
 		F33F491C2B29BC8900307F1C /* TrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F3F836E62B73B075003D6BE7 /* workoutpage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = workoutpage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			children = (
 				F33F48FB2B29BC8800307F1C /* TrackerApp.swift */,
 				F33F48FD2B29BC8800307F1C /* ContentView.swift */,
+				F3F836E62B73B075003D6BE7 /* workoutpage.swift */,
 				F33F48FF2B29BC8800307F1C /* Item.swift */,
 				F33F49012B29BC8900307F1C /* Assets.xcassets */,
 				F33F49032B29BC8900307F1C /* Tracker.entitlements */,
@@ -264,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3F836E72B73B075003D6BE7 /* workoutpage.swift in Sources */,
 				F33F48FE2B29BC8800307F1C /* ContentView.swift in Sources */,
 				F33F49002B29BC8800307F1C /* Item.swift in Sources */,
 				F33F48FC2B29BC8800307F1C /* TrackerApp.swift in Sources */,
